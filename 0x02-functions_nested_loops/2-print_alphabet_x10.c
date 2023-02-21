@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	char c = 'a';
-	int d = 1;
+        char c = 'a';
+        int d = 1;
 
-	while (d <= 10)
-	{
-		for (c = 'a'; c <= 'z'; c++)
-		{
-			putchar(c);
-		}
-		d++;
-		putchar('\n');
-	}
-	return (0);
+        while (d <= 10)
+        {
+                for (c = 'a'; c <= 'z'; c++)
+                {
+                        putchar(c);
+                }
+                d++;
+                putchar('\n');
+        }
+        return (0);
 }
