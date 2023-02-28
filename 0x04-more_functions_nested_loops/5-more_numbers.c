@@ -9,15 +9,21 @@
 void more_numbers(void)
 {
 	int n = 0;
+	int m = 10;
 	char c;
-
+	
 	while (n < 10)
 	{
-		for (c = '1'; c <= '14'; c++)
+		for (c = '0'; c <= '9'; c++)
+		{
 			_putchar(c);
-		putchar('\n');
-		n++
+		}
+		while (m <= 14)
+		{
+			_putchar((m/10) + 48);
+			_putchar((m%10) + 48);
+			m++;
+		}
+		n++;
 	}
-	return (0);
 }
-
