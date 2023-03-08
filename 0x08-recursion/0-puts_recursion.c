@@ -1,30 +1,17 @@
 #include "main.h"
 
 /**
- * _puts_recursion - function that print strings
- * follow by new line
- * @s: variable input address
- * Return:void
+ * _puts_recursion - main - check the code
+ * @s: character of string
+ * Return: Always 0.
  */
 void _puts_recursion(char *s)
 {
-	_putchar('P');
-	_putchar('u');
-	_putchar('t');
-	_putchar('s');
-	_putchar(' ');
-	_putchar('w');
-	_putchar('i');
-	_putchar('t');
-	_putchar('h');
-	_putchar(' ');
-	_putchar('r');
-	_putchar('e');
-	_putchar('c');
-	_putchar('u');
-	_putchar('r');
-	_putchar('s');
-	_putchar('i');
-	_putchar('o');
-	_putchar('n');
+	if (*(s) != '\0')
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	if (*(s) == '\0')
+		_putchar('\n');
 }
